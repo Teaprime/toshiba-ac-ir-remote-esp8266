@@ -4,7 +4,9 @@ This code leverages https://github.com/ikke-t/toshiba-ac-ir-remote as a baseline
 
 Since the original repo uses IRRemote library, which doesn't implement ESP functionality, this repo instead depends on https://github.com/crankyoldgit/irremoteesp8266. Due to the very similar interfaces, it's mostly a drop in replacement. ir_Toshiba_esp wraps and IRSend object and contains code from the toshiba-ac-ir-remote repository.
 
-A simple webserver is included which can recieve commands and execute them on the transmitter. The ssl-server branch also has a different webserver that implements ssl, but is rather slow (on an ESP8266) and only supports a single client connection.
+A simple webserver is included which can recieve commands and execute them on the transmitter. The webserver implements ssl, but is rather slow (on an ESP8266) and only supports a single client connection.
+
+Tools directory contains a powershell script that generates keys for encryption
 
 Text below is from the original readme
 
